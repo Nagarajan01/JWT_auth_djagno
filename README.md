@@ -1,8 +1,8 @@
 
 Sure, I can help you create a README.md document for your Django project. Here's a template you can use and customize as per your project's requirements:
 
-Project Title
-A brief description of your project goes here.
+**Project Title** 
+A brief description of your project goes here.\n\n
 
 Getting Started
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
