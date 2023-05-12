@@ -1,5 +1,5 @@
 # JACKPOT
-—-----Description------- 
+Jackpot is a full responsive web application. Jackpot app refers to a raffle conducted in Discord where users complete quests provided by the community, which they receive as badges and medallions. Once a raffle is completed, the top members who earned these badges and medallions will be awarded in terms of monetary prizes and hop on to the next raffle drawing.
 
 # What do I need first?
 
