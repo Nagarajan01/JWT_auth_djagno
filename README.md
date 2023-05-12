@@ -36,7 +36,7 @@ Clone the repo, cd to the repo directory, and run it (ideally inside a virtual e
 2. To create a regular user, an endpoint like /users/register can be used. Once a new user is registered, the application can automatically create a user group and add the user to that group.
 
 
-# Deployment code comments
+# Server Deployment Details:
 App server is run using Gunicorn and managed by Supervisor App.
 The file is saved in /etc/supervisor/conf.d folder
 
