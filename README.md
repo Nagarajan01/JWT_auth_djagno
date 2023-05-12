@@ -1,7 +1,7 @@
 
 Sure, I can help you create a README.md document for your Django project. Here's a template you can use and customize as per your project's requirements:
 
-**Project Title** 
+<h1>**Project Title** <h1>
 A brief description of your project goes here.\n\n
 
 Getting Started
