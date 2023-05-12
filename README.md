@@ -27,7 +27,7 @@ Clone the repo, cd to the repo directory, and run it (ideally inside a virtual e
 7. Create the tables to database: `python manage.py makemigrations`
 8. Apply migration to the database: `python manage.py migrate`
 9. Run the development server: `python manage.py runserver`
-10. Run a Celery worker with beat scheduler: `celery -A jackpot worker --beat -l info'
+10. Run a Celery worker with beat scheduler: `celery -A jackpot worker --beat -l info`
 
 
 # Creating users(Both admin and users):
