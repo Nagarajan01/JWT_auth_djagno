@@ -1,70 +1,41 @@
+# JACKPOT
+—-----Description------- 
 
+# What do I need first?
 
-<h1>JACKPOT</h1>
+Nothing much, just Python 3+ and (ideally) virtualenv.
 
-A brief description of your project goes here.<br>
+# How do I start it?
 
+Clone the repo, cd to the repo directory, and run it (ideally inside a virtual environment).
 
-Getting Started
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
-
-Prerequisites
-List all the software and dependencies required to run the project.
-
-diff
-Copy code
-Example:
-- Python 3.8 or later
-- Django 3.2 or later
+# List the technologies and tools used in the project. Example:
+- Python 3.10
+- Django 4.1.4
+- Djangorestframework 3.14.0
+- Django-celery-beat 2.4.0
 - PostgreSQL 12 or later
-Installing
-A step-by-step series of examples that tell you how to get a development environment running.
 
-markdown
-Copy code
-Example:
 
-1. Clone the repository: `git clone https://github.com/your-username/your-project.git`
-2. Navigate to the project directory: `cd your-project`
+# Installing:
+1. Clone the repository: `git clone https://github.com/jayapal/jackpot-backend.git`
+2. Navigate to the project directory: `cd jackpot-backend`
 3. Create a virtual environment: `python -m venv env`
 4. Activate the virtual environment: `source env/bin/activate` (for Linux/Mac) or `env\Scripts\activate.bat` (for Windows)
-5. Install the dependencies: `pip install -r requirements.txt`
-6. Create the database: `python manage.py migrate`
-7. Run the development server: `python manage.py runserver`
-Running the tests
-Explain how to run the automated tests for this system.
+5. Navigate to the directory: `cd jackpot`
+6. Install the dependencies: `pip install -r requirements.txt`
+7. Create the tables to database: `python manage.py makemigrations`
+8. Apply migration to the database: `python manage.py migrate`
+9. Run the development server: `python manage.py runserver`
+10. Run a Celery worker with beat scheduler: `celery -A jackpot worker --beat -l info'
 
-bash
-Copy code
-Example:
 
-1. Activate the virtual environment: `source env/bin/activate` (for Linux/Mac) or `env\Scripts\activate.bat` (for Windows)
-2. Run the tests: `python manage.py test`
-Deployment
-Add additional notes about how to deploy this on a live system.
+# Creating users(Both admin and users):
+1. To create an admin user, an admin user can use the terminal or the admin panel to create the user account. After creating the admin user account, the admin can log in to the admin panel and manually create a group for other admin users and add admin users to this group(Group name should me "Admin").
 
-Built With
-List the technologies and tools used in the project.
+2. To create a regular user, an endpoint like /users/register can be used. Once a new user is registered, the application can automatically create a user group and add the user to that group.
 
-diff
-Copy code
-Example:
-- Django - The web framework used
-- PostgreSQL - The database used
-- HTML, CSS, and JavaScript - The front-end technologies used
-Contributing
-Explain how others can contribute to this project.
 
-Versioning
-Explain the versioning scheme used in the project.
 
-Authors
-List the authors or contributors to the project.
 
-License
-Add the license for your project.
 
-Acknowledgments
-Mention any resources, tutorials, or libraries you used to create this project.
-
-That's it! Customize this template as per your project's requirements and add any additional sections you deem necessary. Good luck with your project!
